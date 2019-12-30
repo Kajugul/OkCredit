@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Suite" parallel="tests" verbose="1">
+
+    <test name="OkCredit_Android">
+        <parameter name="deviceName" value="realme 5 pro"/>
+        <parameter name="deviceID" value="192.168.1.5:5555"/>
+        <parameter name="platformVersion" value="9"/>
+        <parameter name="urlPath" value="http://0.0.0.0:4723/wd/hub"/>
+        <classes>
+            <class name="Test.Test01"/>
+        </classes>
+    </test>
+
+    <!--<test name="OkCredit_iOS">-->
+        <!--<parameter name="deviceName" value="iPhone Simulator"/>-->
+        <!--<parameter name="deviceID" value="192.168.1.5:5555"/>-->
+        <!--<parameter name="platformVersion" value="10.3.1"/>-->
+        <!--<parameter name="urlPath" value="http://0.0.0.0:4723/wd/hub"/>-->
+        <!--<classes>-->
+            <!--<class name="Test.Test01"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+</suite>
